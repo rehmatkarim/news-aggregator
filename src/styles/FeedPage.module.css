@@ -1,0 +1,30 @@
+/* General styling for the FeedPage */
+.feedPage {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .articleList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  @media (max-width: 599px) {
+    .articleList {
+      justify-content: center;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 899px) {
+    .articleList {
+      justify-content: center;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .articleList {
+      justify-content: center;
+    }
+  }
+  

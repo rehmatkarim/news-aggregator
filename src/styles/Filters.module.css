@@ -1,0 +1,54 @@
+/* General styling */
+.filterBar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .filterBar input[type="text"],
+  .filterBar select,
+  .filterBar input[type="date"] {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  @media (min-width: 600px) {
+    .filterBar {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .filterBar input[type="text"],
+    .filterBar select,
+    .filterBar input[type="date"] {
+      width: auto;
+      flex: 1;
+      margin: 0 5px;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .filterBar {
+      justify-content: flex-start;
+    }
+  
+    .filterBar input[type="text"],
+    .filterBar select,
+    .filterBar input[type="date"] {
+      flex: none;
+      margin: 0 10px;
+      max-width: 150px;
+    }
+  }
+  
